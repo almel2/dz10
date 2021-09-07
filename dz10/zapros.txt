@@ -1,0 +1,27 @@
+
+# 1
+In [23]: car1
+Out[23]: <Product: Audi A6 - 1000$>
+
+In [24]: car1.user_set.all()
+Out[24]: <QuerySet [<User: Talley, Ashanti>, <User: Calhoun, Jazmin>]>
+
+
+# 2
+In [26]: city = City.objects.get(pk=1)
+
+In [27]: city
+Out[27]: <City: Kiev>
+
+In [28]: city.user_set.all()
+Out[28]: <QuerySet [<User: Talley, Ashanti>]>
+
+# 3
+In [33]: prov = Provider.objects.get(pk=1)
+
+In [34]: prov
+Out[34]: <Provider: Audi diller>
+
+In [35]: prov.city
+Out[35]: <City: Kiev>
+
